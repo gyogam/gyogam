@@ -1,17 +1,20 @@
-/* 전체 페이지 중앙 정렬 */
+/* 전체 화면 기준 중앙 정렬 */
 body {
   margin: 0;
-  background: #f5f5f5;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: #fff;
 }
 
-/* 명함 전체 래퍼 */
-.card-wrap {
+/* 이미지 + 버튼 기준 박스 */
+.card-wrapper {
   position: relative;
-  max-width: 430px;      /* 모바일 기준 */
-  margin: 0 auto;
+  width: 100%;
+  max-width: 420px; /* 모바일 기준 */
 }
 
-/* 통 이미지 */
+/* 명함 이미지 */
 .card-img {
   width: 100%;
   display: block;
@@ -23,18 +26,18 @@ body {
   display: block;
 }
 
-/* 📍 카톡 상담 버튼 위치 */
-.kakao {
-  left: 15%;
-  top: 52%;
-  width: 30%;
-  height: 12%;
+/* 카카오 버튼 (퍼센트 기준) */
+.btn.kakao {
+  left: 22%;
+  top: 60%;
+  width: 56%;
+  height: 8%;
 }
 
-/* 📍 메일 쓰기 버튼 위치 */
-.mail {
-  right: 15%;
-  top: 52%;
-  width: 30%;
-  height: 12%;
+/* 메일 버튼 */
+.btn.mail {
+  left: 22%;
+  top: 70%;
+  width: 56%;
+  height: 8%;
 }
