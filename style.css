@@ -1,52 +1,40 @@
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #f5f3ef;
-      display: flex;
-      justify-content: center;
-    }
+/* 전체 페이지 중앙 정렬 */
+body {
+  margin: 0;
+  background: #f5f5f5;
+}
 
-    /* 전체 카드 영역 */
-    .card-wrap {
-      position: relative;
-      width: 100%;
-      max-width: 430px; /* 모바일 기준 */
-    }
+/* 명함 전체 래퍼 */
+.card-wrap {
+  position: relative;
+  max-width: 430px;      /* 모바일 기준 */
+  margin: 0 auto;
+}
 
-    .card-wrap img {
-      width: 100%;
-      display: block;
-    }
+/* 통 이미지 */
+.card-img {
+  width: 100%;
+  display: block;
+}
 
-    /* 공통 버튼 영역 */
-    .link-btn {
-      position: absolute;
-      display: block;
-      /* 확인용 → 배포 시 지워도 됨 */
-      /* background: rgba(255, 0, 0, 0.2); */
-    }
+/* 공통 버튼 */
+.btn {
+  position: absolute;
+  display: block;
+}
 
-    /* 카톡 상담 버튼 */
-    .btn-kakao {
-      left: 10%;
-      width: 35%;
-      top: 52%;
-      height: 12%;
-    }
+/* 📍 카톡 상담 버튼 위치 */
+.kakao {
+  left: 15%;
+  top: 52%;
+  width: 30%;
+  height: 12%;
+}
 
-    /* 메일 쓰기 버튼 */
-    .btn-mail {
-      right: 10%;
-      width: 35%;
-      top: 52%;
-      height: 12%;
-    }
-
-    /* PC에서 너무 커지는 것 방지 */
-    @media (min-width: 768px) {
-      .card-wrap {
-        max-width: 390px;
-      }
-    }
-  </style>
+/* 📍 메일 쓰기 버튼 위치 */
+.mail {
+  right: 15%;
+  top: 52%;
+  width: 30%;
+  height: 12%;
+}
